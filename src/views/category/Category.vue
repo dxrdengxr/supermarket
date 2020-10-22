@@ -13,10 +13,13 @@
         </div>
       </scroll>
     </div>
+    <main-tab-bar />
+
   </div>
 </template>
 
 <script>
+import MainTabBar from "../../components/content/mainTabbar/MainTabBar.vue";
 import NavBar from "components/common/navbar/NavBar";
 import TabControl from "components/content/tabControl/TabControl";
 import Scroll from "components/common/scroll/Scroll";
@@ -43,7 +46,8 @@ export default {
     TabControl,
     Scroll,
     GoodsList,
-    TabContentCategory
+    TabContentCategory,
+    MainTabBar
   },
   data() {
     return {

@@ -6,6 +6,8 @@ const Category = () => import('views/category/Category')
 const Shopcart = () => import('views/cart/Shopcart')
 const Profile = () => import('views/profile/Profile')
 const Detail = () => import('views/detail/Detail')
+const Login =() => import('views/login/Login')
+
 
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
@@ -19,7 +21,11 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '',
-    redirect: '/home'
+    redirect: '/login'
+  },
+  {
+    path: '/login',
+    component: Login
   },
   {
     path: '/home',
@@ -40,7 +46,7 @@ const routes = [
   {
     path: '/detail/:iid',
     component: Detail
-  }
+  },
 ]
 const router = new VueRouter({
   routes,

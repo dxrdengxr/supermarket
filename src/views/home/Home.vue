@@ -26,10 +26,14 @@
     </scroll>
     <!-- 监听组件原生事件时，必须加上native才可以监听到 -->
     <back-top @click.native="backClick" v-show="isShowBackTop" />
+    <main-tab-bar />
   </div>
+  
 </template>
 
 <script>
+import MainTabBar from "../../components/content/mainTabbar/MainTabBar.vue";
+
 // 子组件
 import HomeSwiper from "./childComps/HomeSwiper";
 import RecommendView from "./childComps/RecommendView";
@@ -59,7 +63,8 @@ export default {
     TabControl,
     GoodsList,
     GoodsListItem,
-    Scroll
+    Scroll,
+    MainTabBar
   },
   data() {
     return {

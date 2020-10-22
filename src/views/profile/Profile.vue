@@ -7,12 +7,14 @@
     <account-info></account-info>
     <normal-list-view :list-data="orderList" />
     <normal-list-view :list-data="serviceList" />
+    <main-tab-bar />
+
   </div>
 </template>
 
 <script>
 import NavBar from "components/common/navbar/NavBar";
-
+import MainTabBar from "../../components/content/mainTabbar/MainTabBar.vue";
 import UserInfo from "./childComps/UserInfo";
 import AccountInfo from "./childComps/AccountInfo";
 import NormalListView from "./childComps/NomalListView";
@@ -22,7 +24,8 @@ export default {
     NavBar,
     UserInfo,
     AccountInfo,
-    NormalListView
+    NormalListView,
+    MainTabBar
   },
   data() {
     return {

@@ -5,10 +5,12 @@
     </nav-bar>
     <cart-list></cart-list>
     <cart-bottom-bar/>
+    <main-tab-bar />
   </div>
 </template>
 
 <script>
+import MainTabBar from "../../components/content/mainTabbar/MainTabBar.vue";
 import NavBar from "components/common/navbar/NavBar";
 import CartList from "./childComps/CartList";
 import CartBottomBar from "./childComps/CartBottomBar";
@@ -24,7 +26,8 @@ export default {
   components: {
     NavBar,
     CartList,
-    CartBottomBar
+    CartBottomBar,
+    MainTabBar
   },
   computed: {
     // ...mapGetters(["cartLength"])

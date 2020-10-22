@@ -4,7 +4,7 @@
       <router-view />
     </keep-alive>
 
-    <main-tab-bar />
+    <!-- <main-tab-bar /> -->
   </div>
 </template>
 
